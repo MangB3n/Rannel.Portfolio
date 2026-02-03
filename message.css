@@ -1,0 +1,142 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    background-image: url('images/jesus1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-margin: 0;
+    background-padding: 20px;
+}
+.comic-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #181C14;
+}
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.chat-bubble {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.left {
+    justify-content: flex-start;
+}
+.right {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    background-color: #ddd;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.message {
+    position: relative;
+    max-width: 70%;
+    padding: 15px;
+    margin: 0 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.left .message {
+    background-color: #FFF176;
+    border: 2px solid #333;
+}
+.right .message {
+    background-color: #81D4FA;
+    border: 2px solid #333;
+}
+.left .message:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 20px;
+    border-width: 10px 15px 10px 0;
+    border-style: solid;
+    border-color: transparent #333 transparent transparent;
+}
+.left .message:after {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 21px;
+    border-width: 9px 13px 9px 0;
+    border-style: solid;
+    border-color: transparent #FFF176 transparent transparent;
+}
+.right .message:before {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 20px;
+    border-width: 10px 0 10px 15px;
+    border-style: solid;
+    border-color: transparent transparent transparent #333;
+}
+.right .message:after {
+    content: "";
+    position: absolute;
+    right: -12px;
+    top: 21px;
+    border-width: 9px 0 9px 13px;
+    border-style: solid;
+    border-color: transparent transparent transparent #81D4FA;
+}
+.character-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    .avatar {
+        width: 60px;
+        height: 60px;
+    }
+    .message {
+        font-size: 14px;
+    }
+    .left .message:before {
+        top: 15px;
+        border-width: 8px 12px 8px 0;
+    }
+    .left .message:after {
+        top: 16px;
+        border-width: 7px 10px 7px 0;
+    }
+    .right .message:before {
+        top: 15px;
+        border-width: 8px 0 8px 12px;
+    }
+    .right .message:after {
+        top: 16px;
+        border-width: 7px 0 7px 10px;
+    }
+}
