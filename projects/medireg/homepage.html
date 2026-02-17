@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin - Medireg</title>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"> 
+      <img src="images/medlog.png" alt="Medireg Logo" style="height: 53px; width: 195px;">
+    </div>
+    <ul class="nav-links" style="font-size: 1.1rem;">
+      <li><a href="#">Home</a></li>
+      <li><a href="admin/dashboard.php">Dashboard</a></li>
+      <li><a href="admin/display.php">Queue Display</a></li>
+      <li><a href="admin/history.php">Patient History</a></li>
+      <li><a href="admin/logout.php">Logout</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Organizing Care,</h1>
+      <h2>Empowering Lives.</h2>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Medireg is dedicated to streamlining healthcare management through developing a queue management system. Our platform helps medical facilities efficiently manage patient queues, ensuring better service delivery and patient satisfaction.</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> Email: support@medireg.com</p>
+          <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+          <p><i class="fas fa-map-marker-alt"></i> Address: 123 Healthcare Street, Medical City</p>
+        </div>
+        <div class="contact-form">
+          <form action="#" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="homepage.js"></script>
+</body>
+</html>
